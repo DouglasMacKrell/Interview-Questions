@@ -13,7 +13,7 @@ const findMostCommonOrigin = (arr) => {
     let commonOriginUrls = {};
     let maxCount = 0;
     let maxOrigin = "";
-    for (let url in arr){
+    for (let url of arr){
         const origin = getOrigin(url)
         if (commonOriginUrls[origin]){
             commonOriginUrls[origin] += 1
